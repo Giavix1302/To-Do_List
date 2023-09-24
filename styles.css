@@ -113,16 +113,13 @@ html {
     align-items: center;
     text-decoration: none;
     margin-bottom: 8px;
-    cursor: pointer;
+    cursor: default;
     background-color: #eeeeee85;
-    padding: 12px 16px;
     border-radius: 12px;
-
 }
 
 .item__content {
-    width: 380px;
-    margin-left: 8px;
+    width: 400px;
     color: #333333;
     font-weight: 400;
     font-size: 16px;
@@ -131,6 +128,8 @@ html {
     align-items: center;
     line-height: 1.5;
     text-align: justify;
+    padding: 16px 12px;
+    user-select: none;
 }
 
 .item__check-btn {
@@ -141,8 +140,8 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-right: 12px;
     cursor: pointer;
+    margin-left: 16px;
 }
 
 .item.checked .item__content {
@@ -155,22 +154,12 @@ html {
 
 }
 
-.item_delete {
-    background-color: transparent;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-}
-
 .item__close-icon {
     width: 12px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 16px;
+    cursor: pointer;
 }
 
 .item_delete:hover {
