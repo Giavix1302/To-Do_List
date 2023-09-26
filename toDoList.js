@@ -10,6 +10,7 @@ const $$ = document.querySelectorAll.bind(document);
 const input = $('.body__input');
 const listTask = $('.body__list');
 const addBtn = $('.body__submit');
+const editBtn = $('.item__edit-icon');
 
 const items = [];
 
@@ -24,6 +25,7 @@ function render(value) {
             style="background-image: url(./assets/icon/uncheck.png);"
         ></div>
         <p class="item__content">${value}</p>
+        <img src="./assets/icon/pen.png" alt="" class="item__edit-icon">
         <img src="./assets/icon/close.png" alt="" class="item__close-icon">
        
     `
@@ -45,6 +47,10 @@ addBtn.onclick = function() {
     saveData();
 }
 
+editBtn.onclick = function() {
+    
+}
+
 input.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         event.preventDefault();
@@ -64,14 +70,14 @@ listTask.addEventListener('click', function(e) {
 
 // Save at localStorage
 
-function saveData() {
-    localStorage.setItem("data", listTask.innerHTML);
-}
+// function saveData() {
+//     localStorage.setItem("data", listTask.innerHTML);
+// }
 
-function showTask() {
-    listTask.innerHTML = localStorage.getItem("data");
-}
-showTask();
+// function showTask() {
+//     listTask.innerHTML = localStorage.getItem("data");
+// }
+// showTask();
 
 
    

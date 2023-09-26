@@ -155,7 +155,15 @@ html {
 }
 
 .item__close-icon {
-    width: 12px;
+    width: 13px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.item__edit-icon {
+    width: 15px;
     display: inline-block;
     margin-left: auto;
     margin-right: 16px;
