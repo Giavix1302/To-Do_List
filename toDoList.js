@@ -36,6 +36,12 @@ btn.addEventListener('click', function() {
     render(tasks);
 })
 
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    btn.click();
+  }
+});
 
 
 function render(tasks = []) {
